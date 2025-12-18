@@ -322,10 +322,9 @@ textarea::placeholder {
 
 }
 
-/* ===== DESKTOP KECIL / WINDOW SETENGAH ===== */
-@media (max-width: 900px) {
+/* ===== MOBILE PORTRAIT & DESKTOP KECIL ===== */
+@media (max-width: 900px) and (orientation: portrait) {
 
-    /* BUTTON JADI MOBILE PORTRAIT */
     .buttons-grid {
         width: 82%;
         display: grid;
@@ -338,7 +337,6 @@ textarea::placeholder {
         justify-content: center;
     }
 
-    /* RESET WIDTH DESKTOP */
     .buttons-grid .btn-large,
     .buttons-grid .btn-small {
         width: 100% !important;
@@ -346,12 +344,10 @@ textarea::placeholder {
         font-size: 13px;
     }
 
-    /* MAP URUTAN */
     .buttons-grid button:nth-child(1) { grid-area: upper; }
     .buttons-grid button:nth-child(2) { grid-area: lower; }
     .buttons-grid button:nth-child(4) { grid-area: capitalized; }
     .buttons-grid button:nth-child(5) { grid-area: sentence; }
     .buttons-grid button:nth-child(6) { grid-area: copy; }
     .buttons-grid button:nth-child(3) { grid-area: clear; }
-
 }
